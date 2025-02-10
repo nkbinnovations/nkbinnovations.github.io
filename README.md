@@ -1,8 +1,8 @@
 # Nandakumar Balasubramaniyam
 
-**Address:** 60 Jefferson House, West Drayton, London, UB7 9FL  
-**Phone number:** +44 7438 867 877  
-**E-mail:** nandakumar649@gmail.com  
+**Address:** 60 Jefferson House, West Drayton, London, UB7 9FL
+**Phone number:** +44 7438 867 877
+**E-mail:** nandakumar649@gmail.com
 
 ## About Me
 
@@ -18,7 +18,7 @@ I am confident that my technical acumen, coupled with my strong communication sk
 
 ## Education
 
-**R.M.K Engineering College, Chennai, Tamil Nadu**  
+**R.M.K Engineering College, Chennai, Tamil Nadu**
 *April 2008 - April 2012*
 
 - Bachelor of Engineering in Electronics and Communications
@@ -51,10 +51,10 @@ I am confident that my technical acumen, coupled with my strong communication sk
 
 ## Contact
 
-**Name:** Nandakumar Balasubramaniyam  
-**Address:** 60 Jefferson House, West Drayton, London, UB7 9FL  
-**Phone number:** +44 7438 867 877  
-**E-mail:** nandakumar649@gmail.com  
-**LinkedIn:** [linkedin.com/in/nandakumar-balasubramaniyam](https://www.linkedin.com/in/nandakumar-balasubramaniyam)  
-**GitHub:** [github.com/nandakumar649](https://github.com/nandakumar649)  
+**Name:** Nandakumar Balasubramaniyam
+**Address:** 60 Jefferson House, West Drayton, London, UB7 9FL
+**Phone number:** +44 7438 867 877
+**E-mail:** nandakumar649@gmail.com
+**LinkedIn:** [linkedin.com/in/nandakumar-balasubramaniyam](https://www.linkedin.com/in/nandakumar-balasubramaniyam)
+**GitHub:** [github.com/nandakumar649](https://github.com/nandakumar649)
 **Website:** [nandakumar649.github.io](https://nandakumar649.github.io)

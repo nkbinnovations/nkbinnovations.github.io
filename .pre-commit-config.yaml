@@ -1,5 +1,11 @@
 ---
 repos:
+  # - repo: local
+  #   hooks:
+  #     - id: dynamic-content
+  #       name: Create Dynamic Content
+  #       entry: python3 scripts/createpage.py
+  #       language: python
   - repo: https://github.com/psf/black.git
     rev: 1b2427a2b785cc4aac97c19bb4b9a0de063f9547
     hooks:
@@ -49,10 +55,12 @@ repos:
         files: \.xml$
       - id: detect-private-key
       - id: trailing-whitespace
+        exclude: ^themes/
       - id: mixed-line-ending
         args: [--fix=lf]
       - id: pretty-format-json
         args: [--autofix, --no-sort-keys]
         files: \.json$
+        exclude: ^themes/
       - id: end-of-file-fixer
-        exclude: \.ya?ml$
+        exclude: ^themes/|\.ya?ml$
