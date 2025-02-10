@@ -1,0 +1,26 @@
+continue_on_error: false
+doublestar: true
+exclude:
+    - '.github/workflows/*.yaml'
+    - '.github/workflows/*.yml'
+extensions:
+    - yaml
+    - yml
+line_ending: lf
+output_format: line
+regex_exclude: []
+formatter:
+    disallow_anchors: false
+    drop_merge_tag: false
+    eof_newline: true
+    include_document_start: true
+    indent: 2
+    indentless_arrays: false
+    line_ending: lf
+    max_line_length: 0
+    pad_line_comments: 2
+    retain_line_breaks: false
+    scan_folded_as_literal: false
+    strip_directives: false
+    trim_trailing_whitespace: true
+    type: basic

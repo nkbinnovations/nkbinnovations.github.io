@@ -1,0 +1,5 @@
+---
+dependencies:
+  - page: https://raw.githubusercontent.com/nkbinnovations/reusable-workflows/main/README.md
+    path: content/projects/reusable-workflows.md
+    title: 'Reusable Workflows'

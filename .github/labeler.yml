@@ -1,0 +1,58 @@
+---
+# Add 'enhancement' label to any PR where the head branch name starts with `feature` or has a `feature` section in the name
+enhancement:
+  - head-branch:
+      - '^feature-.*'
+      - '^feat-.*'
+      - '^pre-commit-.*'
+# Add 'bug' label to any PR that is opened from a 'bug', `bugfix`, or 'hotfix' branch
+bug:
+  - head-branch:
+      - '^bug-.*'
+      - '^bugfix-.*'
+      - '^hotfix-.*'
+      - '^fix-.*'
+# Add 'release' label to any PR that is opened from a 'release' branch
+release:
+  - base-branch:
+      - 'master'
+# Add 'documentation' label to any changes within 'docs' folder or any subfolders or to .md files within the entire repository
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '*.md'
+  - head-branch:
+      - '^docs-.*'
+branchnaming:
+  - head-branch:
+      - '^(?!.*(?:^bug-.*|^bugfix-.*|^hotfix-.*|^fix-.*|^feature-.*|^feat-.*|master|^docs-.*)).*$'
+# Add 'infra' label to any PR that has changes to 'terraform' or 'ansible' folder or any subfolders
+repo:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/labeler.yml'
+          - '.ansible-lint.yaml'
+          - '.gitattributes'
+          - '.gitignore'
+          - '.yamlfmt'
+          - '.yamllint'
+          - '.pre-commit-config.yaml'
+          - 'cspell.yaml'
+# Add 'infra' label to any PR that has changes to 'terraform' or 'ansible' folder or any subfolders
+infra:
+  - changed-files:
+      - any-glob-to-any-file:
+          - 'terraform/**'
+          - 'ansible/**'
+          - 'packer/**'
+# Add 'pipeline' label to any PR that has changes to '.github/workflows' or 'pipelines' folder or any subfolders
+pipeline:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.github/workflows/**'
+          - 'pipelines/**'
+# Add 'security' label to any PR that has changes to '.secrets.baseline' file
+security:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '.secrets.baseline'

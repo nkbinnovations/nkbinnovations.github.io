@@ -1,0 +1,40 @@
+baseURL = 'https://nandakumar649.github.io'
+languageCode = 'en-gb'
+title = "NKB Innovations"
+theme = "hugo-theme-m10c"
+author = "Nanda Bala"
+description = 'Profile Page'
+avatar = 'avatar.jpg'
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects"
+    weight = 2
+
+[params]
+  # Author
+  author = "Nanda Bala"
+  # Description
+  description = "Innovations made simpler"
+  avatar = 'images/avatar.jpg'
+  # Social links
+  [[params.social]]
+    icon = "brand-github"
+    name = "My Github"
+    url = "https://github.com/nkbinnovations"
+  [[params.social]]
+    icon = "brand-x"
+    name = "X"
+    url = "https://x.com/nandakumar649"
+  [[params.social]]
+    icon = "brand-linkedin"
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/nandakumar649"

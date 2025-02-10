@@ -1,0 +1,58 @@
+---
+repos:
+  - repo: https://github.com/psf/black.git
+    rev: 1b2427a2b785cc4aac97c19bb4b9a0de063f9547
+    hooks:
+      - id: black
+        name: black
+        description: "Black: The uncompromising Python code formatter"
+        entry: black
+        language: python
+        files: \.py$
+  - repo: https://github.com/rhysd/actionlint.git
+    rev: v1.7.3
+    hooks:
+      - id: actionlint
+        name: Lint GitHub Actions workflow files
+        description: Runs actionlint to lint GitHub Actions workflow files
+        language: golang
+        types: ["yaml"]
+        files: ^\.github/workflows/
+        entry: actionlint
+        minimum_pre_commit_version: 3.0.0
+  - repo: https://github.com/google/yamlfmt.git
+    rev: v0.14.0
+    hooks:
+      - id: yamlfmt
+        name: yamlfmt
+        description: This hook uses github.com/google/yamlfmt to format yaml files. Requires Go >1.18 to be installed.
+        entry: yamlfmt
+        language: golang
+        types: [yaml]
+        files: \.ya?ml$
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      # - id: check-case-conflict
+      - id: no-commit-to-branch
+        args: [--branch, main]
+      - id: check-merge-conflict
+      - id: requirements-txt-fixer
+        files: requirements\.txt$
+      - id: check-json
+        files: \.json$
+      - id: check-symlinks
+        name: check for broken symlinks
+      - id: check-yaml
+        files: \.ya?ml$
+      - id: check-xml
+        files: \.xml$
+      - id: detect-private-key
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+        args: [--fix=lf]
+      - id: pretty-format-json
+        args: [--autofix, --no-sort-keys]
+        files: \.json$
+      - id: end-of-file-fixer
+        exclude: \.ya?ml$
