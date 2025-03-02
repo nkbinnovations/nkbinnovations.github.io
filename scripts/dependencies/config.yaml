@@ -4,5 +4,5 @@ dependencies:
     path: content/projects/reusable-workflows.md
     title: 'Reusable Workflows'
   - page: https://raw.githubusercontent.com/nkbinnovations/terraform-aws-iam-roles-module/refs/heads/main/README.md
-    path: content/projects/terraform-aws-iam-roles-module.md
+    path: content/projects/terraform-modules/aws-iam-role.md
     title: 'AWS IAM Roles Terraform Module'
