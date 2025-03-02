@@ -3,6 +3,7 @@ title = 'Reusable Workflows'
 date = '2025-02-10T01:06:03Z'
 +++
 
+# reusable-workflows
 
 [![github-pre-commit-checks](https://github.com/nkbinnovations/reusable-workflows/actions/workflows/github-pre-commit-checks.yaml/badge.svg)](https://github.com/nkbinnovations/reusable-workflows/actions/workflows/github-pre-commit-checks.yaml)
 [![github-action-lint](https://github.com/nkbinnovations/reusable-workflows/actions/workflows/github-action-lint.yaml/badge.svg)](https://github.com/nkbinnovations/reusable-workflows/actions/workflows/github-action-lint.yaml)
@@ -20,10 +21,9 @@ date = '2025-02-10T01:06:03Z'
 
 This repository contains several GitHub Actions workflows for linting and other automated checks. Below is a brief description of each workflow:
 
-<details>
-<summary><b>github-action-lint</b></summary>
+### github-action-lint
 
-  Runs the Lint on the GitHub actions workflows to verify the syntax of the workflows defined in the user repository
+  * Runs the Lint on the GitHub actions workflows to verify the syntax of the workflows defined in the user repository
 
   **INPUTS**
 
@@ -31,16 +31,13 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-action-lint:
-      name: githu-actions-lint
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-action-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
+  github-action-lint:
+    name: githu-actions-lint
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-action-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
   ```
-</details>
 
-<details>
-<summary><b>github-ansible-lint</b></summary>
-
-   Runs the Lint on the ansible configurations to verify the syntax in the user repository
+### github-ansible-lint
+  * Runs the Lint on the ansible configurations to verify the syntax in the user repository
 
   **INPUTS**
 
@@ -58,18 +55,15 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-ansible-lint:
-      name: ansible-lint
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-ansible-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
-      with:
-        ansible_lint_config: '.ansible-lint.yaml'
+  github-ansible-lint:
+    name: ansible-lint
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-ansible-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
+    with:
+      ansible_lint_config: '.ansible-lint.yaml'
   ```
-</details>
 
-<details>
-<summary><b>github-packer-lint</b></summary>
-
-   Runs the Lint on the packer configurations to verify the syntax in the user repository
+### github-packer-lint
+  * Runs the Lint on the packer configurations to verify the syntax in the user repository
 
   **INPUTS**
 
@@ -83,16 +77,13 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-packer-lint:
-      name: packer-lint
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-packer-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
+  github-packer-lint:
+    name: packer-lint
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-packer-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
   ```
-</details>
 
-<details>
-<summary><b>github-terraform-lint</b></summary>
-
-   Runs the Lint on the terraform configurations to verify the syntax in the user repository
+### github-terraform-lint
+  * Runs the Lint on the terraform configurations to verify the syntax in the user repository
 
   **INPUTS**
 
@@ -106,18 +97,15 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-terraform-lint:
-      name: terraform-lint
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-terraform-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
-      with:
-        terraform_version: '1.10.3'
+  github-terraform-lint:
+    name: terraform-lint
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-terraform-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
+    with:
+      terraform_version: '1.10.3'
   ```
-</details>
 
-<details>
-<summary><b>github-python-lint</b></summary>
-
-   Runs the Lint on the packer configurations to verify the syntax in the user repository
+### github-python-lint
+  * Runs the Lint on the packer configurations to verify the syntax in the user repository
 
   **INPUTS**
 
@@ -127,18 +115,15 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-python-lint:
-      name: python-lint
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-python-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
-      with:
-        python_version: '3.13.0'
+  github-python-lint:
+    name: python-lint
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-python-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
+    with:
+      python_version: '3.13.0'
   ```
-</details>
 
-<details>
-<summary><b>github-yaml-lint</b></summary>
-
-   Runs the Lint on the YAML files to verify the syntax in the user repository
+### github-yaml-lint
+  * Runs the Lint on the YAML files to verify the syntax in the user repository
 
   **INPUTS**
 
@@ -148,18 +133,15 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-yaml-lint:
-      name: python-lint
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-yaml-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
-      with:
-        yamllint_config: '.yamllint.yml'
+  github-yaml-lint:
+    name: python-lint
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-yaml-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
+    with:
+      yamllint_config: '.yamllint.yml'
   ```
-</details>
 
-<details>
-<summary><b>github-labeler</b></summary>
-
-  Creates the Labels for all the pull-request raised on the user repository
+### github-pull-request-labeler
+  * Creates the Labels for all the pull-request raised on the user repository
 
   **INPUTS**
 
@@ -169,18 +151,15 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-labeler:
-      name: github-labeler
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-labeler.yaml@v2 # best to use the SHA instead of tags for immutable code.
-      with:
-        yamllint_config: '.github/labeler.yml'
+  github-labeler:
+    name: github-labeler
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-labeler.yaml@v2 # best to use the SHA instead of tags for immutable code.
+    with:
+      yamllint_config: '.github/labeler.yml'
   ```
-</details>
 
-<details>
-<summary><b>github-pre-commit-checks</b></summary>
-
-  Runs a set of lints for the various configuration files like (Terraform, Packer, Ansible) etc. to ensure the formatting of the code committed to the user repository.
+### github-pre-commit-checks
+  * Runs a set of lints for the various configuration files like (Terraform, Packer, Ansible) etc. to ensure the formatting of the code committed to the user repository.
   This job enables the Pull Request reviewers to verify the code committed to the repository always follows standards.
 
   **INPUTS**
@@ -191,18 +170,15 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-pre-commit-checks:
-      name: github-pre-commit-checks
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-pre-commit-checks.yaml@v2 # best to use the SHA instead of tags for immutable code.
-      with:
-        python_version: '3.12.0'
+  github-pre-commit-checks:
+    name: github-pre-commit-checks
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-pre-commit-checks.yaml@v2 # best to use the SHA instead of tags for immutable code.
+    with:
+      python_version: '3.12.0'
   ```
-</details>
 
-<details>
-<summary><b>github-terraform-deploy</b></summary>
-
-   Deploys the terraform configurations to verify the syntax in the user repository
+### github-terraform-deploy
+  * Deploys the terraform configurations to verify the syntax in the user repository
 
   **INPUTS**
 
@@ -231,19 +207,16 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-terraform-deploy:
-      name: terraform-deploy
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-terraform-deploy.yaml@v2 # best to use the SHA instead of tags for immutable code.
-      with:
-        terraform_version: '1.10.3'
-        terraform_environment: 'dev'
+  github-terraform-deploy:
+    name: terraform-deploy
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-terraform-deploy.yaml@v2 # best to use the SHA instead of tags for immutable code.
+    with:
+      terraform_version: '1.10.3'
+      terraform_environment: 'dev'
   ```
-</details>
 
-<details>
-<summary><b>github-packer-deploy</b></summary>
-
-   Deploys the packer configurations to verify the syntax in the user repository
+### github-packer-deploy
+  * Deploys the packer configurations to verify the syntax in the user repository
 
    **Note:**
      - This workflow works only for HCL2 Packer templates.
@@ -275,19 +248,16 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-packer-deploy:
-      name: packer-deploy
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-packer-deploy.yaml@v2 # best to use the SHA instead of tags for immutable code.
-      with:
-        packer_version: '1.8.3'
-        packer_action: 'inspect'
+  github-packer-deploy:
+    name: packer-deploy
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-packer-deploy.yaml@v2 # best to use the SHA instead of tags for immutable code.
+    with:
+      packer_version: '1.8.3'
+      packer_action: 'inspect'
   ```
-</details>
 
-<details>
-<summary><b>github-ansible-deploy</b></summary>
-
-   Deploys the ansible configurations to verify the syntax in the user repository
+### github-ansible-deploy
+  * Deploys the ansible configurations to verify the syntax in the user repository
 
   **INPUTS**
 
@@ -323,11 +293,10 @@ This repository contains several GitHub Actions workflows for linting and other 
 
   example
   ```YAML
-    github-ansible-deploy:
-      name: ansible-deploy
-      uses: nkbinnovations/reusable-workflows/.github/workflows/github-ansible-deploy.yaml@v2 # best to use the SHA instead of tags for immutable code.
-      secrets:
-        ansible_version: "${USER}"
-        ansible_private_key_path: "${HOME}/.ssh/private_key.pem"
+  github-ansible-deploy:
+    name: ansible-deploy
+    uses: nkbinnovations/reusable-workflows/.github/workflows/github-ansible-deploy.yaml@v2 # best to use the SHA instead of tags for immutable code.
+    secrets:
+      ansible_version: "${USER}"
+      ansible_private_key_path: "${HOME}/.ssh/private_key.pem"
   ```
-</details>
