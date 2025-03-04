@@ -1,6 +1,5 @@
 +++
-title = 'AWS IAM Roles'
-date = '2025-03-02T22:38:21Z'
+date = '2025-03-04T14:25:08Z'
 +++
 
 Terraform module to allow AWS users to create IAM roles and attach policy tocreated role
