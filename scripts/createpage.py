@@ -31,7 +31,8 @@ for dependency in dependencies:
         ) as file:
             current_datetime = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
             file.write(
-                f"+++\ntitle = '{dependency['title']}'\ndate = '{current_datetime}'\n+++\n\n{response_text}"
+                # f"+++\ntitle = '{dependency['title']}'\ndate = '{current_datetime}'\n+++\n\n{response_text}"
+                f"+++\ndate = '{current_datetime}'\n+++\n\n{response_text}"
             )
     else:
         print(f"Failed to download {dependency['page']}")

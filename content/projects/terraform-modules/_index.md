@@ -1,7 +1,7 @@
 +++
-title = 'Terraform Modules'
 date = '2025-01-26T09:12:44Z'
 +++
 
-### [AWS IAM Roles](./aws-iam-role)
-  * This is a work-in-progress project and will be available soon for use.
+This is a work-in-progress AWS project and new modules will be added on upcoming releases.
+
+### [AWS Modules](./aws/iam-role)
