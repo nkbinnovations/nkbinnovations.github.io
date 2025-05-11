@@ -1,5 +1,5 @@
 +++
-date = '2025-03-04T14:25:08Z'
+date = '2025-05-12T00:15:41Z'
 +++
 
 Terraform module to allow AWS users to create IAM roles and attach policy tocreated role

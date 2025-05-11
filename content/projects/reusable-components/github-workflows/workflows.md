@@ -1,5 +1,5 @@
 +++
-date = '2025-03-04T14:25:08Z'
+date = '2025-05-12T00:15:40Z'
 +++
 
 
@@ -18,47 +18,6 @@ date = '2025-03-04T14:25:08Z'
 ## Workflows
 
 This repository contains several GitHub Actions workflows for linting and other automated checks. Below is a brief description of each workflow:
-
-### github-action-lint
-
-  * Runs the Lint on the GitHub actions workflows to verify the syntax of the workflows defined in the user repository
-
-  **INPUTS**
-
-  - **(not-required)**
-
-  example
-  ```YAML
-  github-action-lint:
-    name: githu-actions-lint
-    uses: nkbinnovations/reusable-workflows/.github/workflows/github-action-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
-  ```
-
-### github-ansible-lint
-  * Runs the Lint on the ansible configurations to verify the syntax in the user repository
-
-  **INPUTS**
-
-  - **ansible_requirements_file:** *(optional)*
-
-    Relative file path of the 'requirements.yml' file in the user repository. `default('')`
-
-  - **ansible_directory:** *(optional)*
-
-    Relative ansible folder path of the ansible configuration folders in the user repository. `default('ansible')`
-
-  - **ansible_lint_config:** *(optional)*
-
-    Relative file path of the '.ansible-lint.yaml' file in the user repository. `default('`[.ansible-lint.yaml](https://github.com/nkbinnovations/reusable-workflows/blob/main/.ansible-lint.yaml)'`)`
-
-  example
-  ```YAML
-  github-ansible-lint:
-    name: ansible-lint
-    uses: nkbinnovations/reusable-workflows/.github/workflows/github-ansible-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
-    with:
-      ansible_lint_config: '.ansible-lint.yaml'
-  ```
 
 ### github-packer-lint
   * Runs the Lint on the packer configurations to verify the syntax in the user repository
@@ -118,61 +77,6 @@ This repository contains several GitHub Actions workflows for linting and other 
     uses: nkbinnovations/reusable-workflows/.github/workflows/github-python-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
     with:
       python_version: '3.13.0'
-  ```
-
-### github-yaml-lint
-  * Runs the Lint on the YAML files to verify the syntax in the user repository
-
-  **INPUTS**
-
-  - **yamllint_config:** *(optional)*
-
-    The YAML lint rules file for validating the configurations in the user repository. `default('`[.yamllint](https://github.com/nkbinnovations/reusable-workflows/blob/main/.yamllint)'`)`
-
-  example
-  ```YAML
-  github-yaml-lint:
-    name: python-lint
-    uses: nkbinnovations/reusable-workflows/.github/workflows/github-yaml-lint.yaml@v2 # best to use the SHA instead of tags for immutable code.
-    with:
-      yamllint_config: '.yamllint.yml'
-  ```
-
-### github-pull-request-labeler
-  * Creates the Labels for all the pull-request raised on the user repository
-
-  **INPUTS**
-
-  - **labeler_config:** *(optional)*
-
-    The Pull Request Label rules config file for creating relevant labels for the PR in the user repository. `default('`[.github/labeler.yml](https://github.com/nkbinnovations/reusable-workflows/blob/main/.github/labeler.yml)'`)`
-
-  example
-  ```YAML
-  github-labeler:
-    name: github-labeler
-    uses: nkbinnovations/reusable-workflows/.github/workflows/github-labeler.yaml@v2 # best to use the SHA instead of tags for immutable code.
-    with:
-      yamllint_config: '.github/labeler.yml'
-  ```
-
-### github-pre-commit-checks
-  * Runs a set of lints for the various configuration files like (Terraform, Packer, Ansible) etc. to ensure the formatting of the code committed to the user repository.
-  This job enables the Pull Request reviewers to verify the code committed to the repository always follows standards.
-
-  **INPUTS**
-
-  - **python_version:** *(optional)*
-
-    The Python version to use for validating the configurations in the user repository with pre-commit hooks. `default('3.13.0')`
-
-  example
-  ```YAML
-  github-pre-commit-checks:
-    name: github-pre-commit-checks
-    uses: nkbinnovations/reusable-workflows/.github/workflows/github-pre-commit-checks.yaml@v2 # best to use the SHA instead of tags for immutable code.
-    with:
-      python_version: '3.12.0'
   ```
 
 ### github-terraform-deploy
